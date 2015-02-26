@@ -37,10 +37,14 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     arel (6.0.0)
+    autoprefixer-rails (5.1.7)
+      execjs
+      json
     binding_of_caller (0.7.3.pre1)
       debug_inspector (>= 0.0.1)
-    bootstrap-sass (3.2.0.0)
-      sass (~> 3.2)
+    bootstrap-sass (3.3.2.0)
+      autoprefixer-rails (>= 5.0.0.1)
+      sass (>= 3.2.19)
     builder (3.2.2)
     byebug (3.4.0)
       columnize (~> 0.8)
@@ -58,6 +62,8 @@ GEM
     debugger-linecache (1.2.0)
     erubis (2.7.0)
     execjs (2.3.0)
+    font-awesome-sass (4.3.0)
+      sass (~> 3.2)
     globalid (0.3.3)
       activesupport (>= 4.1.0)
     hike (1.2.3)
@@ -157,9 +163,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bootstrap-sass (= 3.2.0.0)
+  bootstrap-sass (= 3.3.2)
   byebug (= 3.4.0)
   coffee-rails (= 4.1.0)
+  font-awesome-sass (= 4.3.0)
   jbuilder (= 2.2.3)
   jquery-rails (= 4.0.3)
   pg (= 0.17.1)
