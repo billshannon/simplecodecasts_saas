@@ -13,7 +13,7 @@
 
 ActiveRecord::Schema.define(version: 20150303175213) do
 
-  create_table "contacts", force: :cascade do |t|
+  create_table "contacts", force: true do |t|
     t.string   "name"
     t.string   "email"
     t.text     "comments"
@@ -21,14 +21,14 @@ ActiveRecord::Schema.define(version: 20150303175213) do
     t.datetime "updated_at"
   end
 
-  create_table "plans", force: :cascade do |t|
+  create_table "plans", force: true do |t|
     t.string   "name"
     t.decimal  "price"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "users", force: :cascade do |t|
+  create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
     t.string   "reset_password_token"
